@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>天王团商会-STMPOP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="icon" href="favicon.ico" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		
+		filterList.init();
+			
+	});	
+	</script>
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+
+</head>
+<body>
+
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+
+		<div class="container">					
+		<div id="portfoliolist">
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/id/randycolin/" target="_blank">
+				<div class="portfolio logo1" data-cat="logo">
+					<div class="portfolio-wrapper">				
+							<img src="images/pic1.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">RandyCOlin</p>
+								<span class="text-category">会长</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>		
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/profiles/76561198317398502"  target="_blank">
+				<div class="portfolio app" data-cat="app">
+					<div class="portfolio-wrapper">			
+							<img src="images/pic2.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">龙</p>
+								<span class="text-category">理事</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>		
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/id/238965379"  target="_blank">
+				<div class="portfolio web" data-cat="web">
+					<div class="portfolio-wrapper">						
+							<img src="images/pic3.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">景三</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>				
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/profiles/76561198256110790"  target="_blank" >
+				<div class="portfolio card" data-cat="card">
+					<div class="portfolio-wrapper">			
+							<img src="images/pic4.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">刑事组之虎曹达华</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>	
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/profiles/76561198334910132" target="_blank">	
+				<div class="portfolio app" data-cat="app">
+					<div class="portfolio-wrapper">
+							<img src="images/pic5.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">桃鸦</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>			
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/profiles/76561198344571565" target="_blank" >
+				<div class="portfolio card" data-cat="card">
+					<div class="portfolio-wrapper">			
+							<img src="images/pic6.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">张张张</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>	
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/profiles/76561198442825318" target="_blank">
+				<div class="portfolio card" data-cat="card">
+					<div class="portfolio-wrapper">			
+							<img src="images/pic7.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">神乐</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>	
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/id/562887237" target="_blank">
+				<div class="portfolio logo1" data-cat="logo">
+					<div class="portfolio-wrapper">			
+							<img src="images/pic8.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">风若刀</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>																																							
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/id/Muzi1998" target="_blank">
+				<div class="portfolio app" data-cat="app">
+					<div class="portfolio-wrapper">			
+							<img src="images/pic9.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">木子</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>		
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/profiles/76561198368431385" target="_blank">												
+				<div class="portfolio web" data-cat="web">
+					<div class="portfolio-wrapper">						
+							<img src="images/pic10.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">体重贼重你撩不动</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>	
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/profiles/76561198386855735" target="_blank">																
+				<div class="portfolio icon" data-cat="icon">
+					<div class="portfolio-wrapper">
+							<img src="images/pic11.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">dwg</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>			
+			</a>
+			<a class="popup-with-zoom-anim" href="https://steamcommunity.com/id/850540037" target="_blank">																																																													
+				<div class="portfolio icon" data-cat="icon">
+					<div class="portfolio-wrapper">						
+							<img src="images/pic12.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title">乐乐</p>
+								<span class="text-category">会员</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>		
+			</a>
+			<a class="popup-with-zoom-anim" href="tencent://Message/?Uin=236656161&websiteName=q-zone.qq.com&Menu=yes236656161" target="_blank">																																																													
+				<div class="portfolio icon" data-cat="icon">
+					<div class="portfolio-wrapper">						
+							<img src="images/001.jpg"  alt="Image 2" />
+						<div class="label">
+							<div class="label-text">
+								<p class="text-title"></p>
+								<span class="text-category"></span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>		
+			</a>
+		</div>
+		
+	</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
